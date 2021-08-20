@@ -5,9 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PhonePipe implements PipeTransform {
 
-  transform(phone: string): unknown {
-    let result = "";
-    let lengthPhone = phone.length;
+  transform(phone = ''): unknown {
+    let result = '';
+    const lengthPhone = phone.length;
 
     if (lengthPhone === 10) 
     {
