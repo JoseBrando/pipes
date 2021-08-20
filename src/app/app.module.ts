@@ -3,9 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+// Pipes
+import { PhonePipe } from './pipes/phone.pipe';
+
+
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhonePipe
   ],
   imports: [
     BrowserModule
